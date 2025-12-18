@@ -24,11 +24,13 @@ namespace Assignments
                 char[] DigitAsc = CurrentString.ToCharArray();
                 Array.Sort(DigitAsc);
                 int MinNum=int.Parse(new string(DigitAsc));
+                Console.WriteLine($"{MaxNum} - {MinNum} = {CurrentNumber}");
                 if(iteration>7) { break; }
             }
-            return iteration;
+            return ($"iteration = {iteration}");
         }
         
     }
 }
+
 
