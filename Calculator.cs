@@ -7,7 +7,7 @@ namespace Assignments
     {
         public static object KaprekarCalculator(int number)
         {
-            if(number <= 0) { return " number is wrong"; }
+            if(number <= 0) { return " number must be positive"; }
          string s = number.ToString("D4");
           
             if(s.Distinct().Count()==1) { $" this programme can not convert {s} to 6174"; }
@@ -32,6 +32,7 @@ namespace Assignments
         
     }
 }
+
 
 
 
